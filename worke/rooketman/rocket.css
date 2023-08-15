@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+   
+}
+
+nav{
+padding: 50px 2rem;   
+   
+}
+.continer{
+   
+    display: flex;
+    align-items:center;
+    margin-left: 50px;
+   justify-content: center;
+
+}
+.btnLinke{
+
+margin-left: 200px;
+     
+     
+}
+
+ul{
+    display: flex;
+   margin-left: auto !important; 
+}
+li{
+    font-family: system-ui;
+    padding-left: 40px;
+    list-style: none;
+    font-size: 29px;
+    font-weight: 300;
+}
+    
+.container-main{
+
+
+height: 750px;
+background: linear-gradient(180.43deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.80) 100%),url(/worke/rooketman/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}

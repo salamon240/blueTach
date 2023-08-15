@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"   href="./calendar.css">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="hader">MY CALENDAR </div>
+        <div class="main">
+            
+            <div class="calenderinfo">
+                <div class="year">
+                   
+                    <p id="yearId">2003</p>
+                    <span id="prev"><i class="fa-solid fa-less-than"></i> </span>        
+                    <span id="next"><i class="fa-solid fa-greater-than"></i> </span>     
+                </div>
+                <div  class="manth">
+                    <p id="manthId">2003</p>
+                   <span id="prev"><i class="fa-solid fa-less-than"></i> </span>        
+                   <span id="next"><i class="fa-solid fa-greater-than"></i> </span>        
+                </div>
+                <div class="calendarmain">
+
+
+                    <div class="weke">
+                        <div class="wek"><label>SUN</label> </div>
+                        <div class="wek"><label for="">MON</label></div>
+                        <div class="wek"><label for="">TUE</label></div>
+                        <div class="wek"><label for="">WED</label></div>
+                        <div class="wek"><label for="">THU</label></div>
+                        <div class="wek"><label for="">FRI</label></div>
+                        <div class="wek"><label for="">SAT</label></div> 
+                    </div>
+                             <div  id="daysId" class="days">
+                              
+                             </div>
+          
+
+                </div>
+                         
+
+
+
+            </div>
+        </div>
+
+        <div class="mode">
+
+            <form class="model" action="">
+                <div class="close">x</div>
+                   <div class="ifo">
+                    <label id="eventIdLb" for="">DASDAS</label>
+                    <input class="modelInpet" type="text" placeholder="Entery your event">
+                    <button class="model-btn" type="submit">save event</button>
+                   </div>
+             
+            </form>
+        </div>
+    </div>
+<script type="text/html" src="calendar.js"></script>
+</body>
+</html>

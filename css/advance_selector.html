@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#parent>.box{
+    height: 20px;
+    border: 1px solid blue;
+}
+#parent .box+.box{
+    background-color: blueviolet;
+}
+#parent .box ~.box{
+    background-color: chartreuse;
+}
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box">d</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

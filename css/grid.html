@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap:20px ; 
+            grid-row-gap:20px;
+        }
+        .item,.footer{
+            border: 1px solid rgb(238, 136, 34);
+            color: #ffffff;
+            font-size: 20px;
+
+        }
+        .item1,.item7{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item4{
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+        }
+        .item5 ,.item6{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+       .foteritem1{
+        display: grid;
+        grid-template-columns: auto auto ;
+
+       }
+       .footer1{
+        grid-column-start: 1;
+        grid-column-start: 2;
+       }
+       .footer3{
+        grid-column-start:2;
+        grid-column-start: 4;
+       }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item item1" style="background-color: aqua;">haeder</div>
+        <div class="item item4" style="background-color: rgb(255, 0, 0);">navigation</div>
+        <div class="item item5" style="background-color: rgb(128, 0, 255);">top page
+        <h1>top page</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat distinctio et perferendis nihil, ullam dolorem explicabo odio reiciendis rerum laborum nulla! Consequatur porro pariatur quasi in quas doloribus minus facilis.</p>
+        </div>
+        <div class="item item6" style="background-color: rgb(0, 255, 64);">main page
+        <H1>welcame to my page</H1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum officiis possimus nostrum numquam at ipsam nemo, ea maiores atque a modi eaque voluptas nesciunt quasi quos iste non laudantium sed.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sapiente aut iste ex consequuntur a sit quas ea delectus, ratione facilis doloremque incidunt nihil voluptas, minima alias dolor vitae. Ut.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta amet libero nesciunt nam, expedita, minima consequuntur enim architecto quam quae, et eligendi. Placeat eum saepe, quam provident reprehenderit officiis distinctio.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum expedita minima exercitationem deserunt vitae eius nihil cum autem totam, a fugiat, officia quisquam praesentium consequatur corrupti animi. At, nisi inventore.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sapiente aut iste ex consequuntur a sit quas ea delectus, ratione facilis doloremque incidunt nihil voluptas, minima alias dolor vitae. Ut.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta amet libero nesciunt nam, expedita, minima consequuntur enim architecto quam quae, et eligendi. Placeat eum saepe, quam provident reprehenderit officiis distinctio.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum expedita minima exercitationem deserunt vitae eius nihil cum autem totam, a fugiat, officia quisquam praesentium consequatur corrupti animi. At, nisi inventore.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit magnam, veniam perferendis aliquid, ad assumenda quisquam provident voluptate ex libero dignissimos facilis alias expedita minima iste sunt saepe voluptatem! Corporis?
+
+        </p>
+        </div>
+        <div class="item item7" style="background-color: rgb(16, 12, 12);"> 
+        <div class="foteritem1"> 
+            <div class="footer footer1">1</div>
+            <div class="footer footer3">3</div>
+        </div>
+      
+        
+        </div>
+       
+     
+    </div>
+</body>
+</html>
