@@ -1,0 +1,42 @@
+.foodList {
+  display: flex;
+  background-color: rgb(228, 244, 238);
+  height: 100%;
+
+  .items {
+    margin: auto;
+    height: 100%;
+    width: 700px;
+    padding: 50px;
+
+
+   
+
+    .fooditem {
+      height: 100%;
+      img {
+        height: 500px;
+      }
+      p {
+        font-family: "Jost", sans-serif;
+        color: rgb(42, 69, 69);
+      }
+      h3{
+        font-size: 26px;
+        color: dimgray;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    
+      }
+
+      a:hover{
+        color: rgb(19, 19, 246);
+        font-size: 21px;
+      }
+    }
+
+  }
+}

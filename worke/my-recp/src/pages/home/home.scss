@@ -1,0 +1,52 @@
+.home{
+
+    .container{
+       
+    }
+  .chart{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        margin: auto;
+        margin-left: 130px;
+        flex-direction: column;
+        
+        .recepisInfo{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .sereching{
+            border: 2px solid lightgray;
+            width: fit-content;
+            margin: auto;
+            border-radius: 5px;
+            display: flex;
+        
+            .serechInput{
+                padding: 10px;
+                border: none;
+                text-align: center;
+                font-size: 15px;
+            }
+            .serechBtn{
+                background: lightslategray;
+                border: none;
+                padding: 10px;
+                color: white;
+                font-size: 20px;
+                 cursor: pointer;
+            }
+            .serechBtn:hover{
+                background-color: rgb(26, 109, 165);
+            }
+    
+        }
+    }
+    .charts{
+        padding:  5px 20px;
+        flex-wrap: wrap;
+
+    }
+    }
