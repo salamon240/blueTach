@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+       button{
+        background-color: burlywood;
+        border: none;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <label class="name" for="">name :</label>
+   
+   
+ </div>
+   
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+
+            const $name=$(".name")
+            const $hair_color=$(".hair_color")
+            const $mass=$(".mass")
+            const $hight=$(".hight")
+            const $gender=$(".gender")
+        $.post("https://httpbin.org/post",{"instgram":"@salmon.isTHEking"}
+        ,function(data){
+
+        console.log("star war",data)
+        $name.text(`name : ${data.form.instgram}`)
+  
+
+      })
+             
+        })
+    </script>
+</body>
+</html>

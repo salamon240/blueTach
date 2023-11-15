@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 202px;
+            height: 202px;
+            border: 2px solid black;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+              
+            $("#box").on("mouseenter",function(){
+                console.log("you enter the box")
+            })
+            .on("mouseout",function(){
+                console.log("you out the box")
+            })
+
+        })
+    </script>
+</body>
+</html>

@@ -24,13 +24,62 @@
 
 
     }
+     
+    p{
+        color: rgb(99, 9, 61);
+    }
+    #special-text{
+        color: rgb(8, 93, 19);
+    }
+    .highlight{
+        color: rgb(0, 238, 255)!important;
+    }
+    div p{
+        color: rgb(7, 2, 15);
+    }
+    div > .highlight{
+        color: rgb(255, 0, 0);
+    }
+    body> p{
+        color: rgb(255, 0, 238);
+    }
+    p{
+        color: rgb(0, 128, 255);
+    }
+  p:first-child{
+    color: rgb(34, 255, 0);
+}
+    p.highlight:first-child{
+        color: rgb(255, 119, 0);
+    }
+    div + p{
+        color: rgb(229, 255, 0);
+    }
+
 </style>
 <body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error vitae consequuntur rerum facere illum enim voluptate tempore tenetur odio officia, ullam repellendus unde, repudiandae odit in quos accusamus nostrum!</p>
+
+        <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error vitae consequuntur rerum facere illum enim voluptate tempore tenetur odio officia, ullam repellendus unde, repudiandae odit in quos accusamus nostrum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error vitae consequuntur rerum facere illum enim voluptate tempore tenetur odio officia, ullam repellendus unde, repudiandae odit in quos accusamus nostrum!</p>
+    </div>
+    <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error vitae consequuntur rerum facere illum enim voluptate tempore tenetur odio officia, ullam repellendus unde, repudiandae odit in quos accusamus nostrum!</p>
     <div class="box">
 
         <div class="secned-box">
-
+           
         </div>
     </div>
+    <script>
+        function pro(callback){
+            const data={name:"david"}
+            callback(data)
+        }
+        pro(console.log)
+        pro(data=>console.log(data.name))
+        pro(data=console.log(data))
+        pro(data=>console.log("david"))
+    </script>
 </body>
-</ht
+</html>

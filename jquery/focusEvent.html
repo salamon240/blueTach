@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <textarea name="mytextarea" id="" cols="30" rows="10"></textarea>
+   <input type="text" id="unfoucs">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+             //selecting by the name 
+             //when you focos on element
+       $("[name='mytextarea']").on("focus",function(){
+
+        console.log("you foucs into this textarea")
+       })
+
+       //wheb you unfoucs from element
+       $("#unfoucs").on("blur",function(){
+
+        console.log("you unfoucs into this textarea")
+         //to get the value from input afetr he foucs out from the element
+         console.log("this what you typing in" ,$(this).val())
+           //how to chack if the user put a website addres
+        //substr(0,4) is to get the letter from 0 to index 4
+           let websit=$(this).val()
+           if(websit.substr(0,4)!=='http')
+           {
+            websit=`http://${websit}`
+           }
+           $(this).val(websit)
+       })
+      
+        })
+    </script>
+</body>
+</html>

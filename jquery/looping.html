@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .container{
+            display: flex;
+            margin: 20px;
+            width: 100%;
+            background-color: aqua;
+            flex-direction: column;
+        }
+    .box{
+       background-color: red;
+       height: 400px;
+       width: 400px;
+       border-radius: 10px;
+       border: 10px solid orange;
+       display: flex;
+       margin: auto;
+            
+        
+    }
+    .animadBtn{
+        width: 200px;
+        padding: 20px;
+        margin:20px auto;
+        font-size: 20px;
+        background-color: rgb(22, 121, 250);   
+        border: none;  
+        border-radius: 8px;
+        cursor: pointer;  
+        text-align: ;
+
+    }
+       
+      
+    </style>
+</head>
+<body>
+   <div class="container">
+    <button class="animadBtn">animad</button>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+   </div>
+    
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+          const $box=$(".box")
+         
+         $box.each(function(index,item){
+
+            console.log("the",index,item)
+            $(item).text(`this is box number ${index}`)
+
+            if(index==2){
+                console.log("yes")
+                $(item).css({
+                    backgroundColor:"yellow",
+                    borderRadius:"50%",
+                    border:"10px solid red",
+                    color:"blue",
+                    alignItems: "center",
+                    fontSize:"30px"
+
+                })
+            }
+         })
+          
+             
+        })
+    </script>
+</body>
+</html>

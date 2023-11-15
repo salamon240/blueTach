@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>
+    some text in here
+</h1>
+<div id="targer">
+    add html befor and after
+</div>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            //insert element after the text
+        $("h1").append(" <u>this is bolde</u>")
+            //insert element befor the text
+
+        $("h1").prepend(" <u>this is italik</u>")
+        
+        //add element before thr elelment
+        $("div#targer").before("<h3> this is befor</h3>")
+               //add element after thr elelment
+
+        $("div#targer").after("<h3> this is afeter</h3>")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="costom" id="costomId"></div>
+     <input type="text" value="SCDDSF">
+     <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo repudiandae porro sed omnis quae maiores. Aut facilis ut quas excepturi hic. Quibusdam veritatis vel rerum et qui provident saepe error?</section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+            //how to add html
+            $("#costomId").html("<h1> welcome now we going to add a custom html </h1><h1 class='ls'> welcome now we going to add a custom html </h1>")
+            
+            $(".ls").text("secend h1 is create by ander selector jqurey")
+           
+            // HOW TO ADD A VALUE TO INPUT
+            const value= $("input").val()
+            console.log("input value :",value)
+
+            const texte=$("section").text()
+            console.log("input value :",texte)
+
+        })
+    </script>
+</body>
+</html>

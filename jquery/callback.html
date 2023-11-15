@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border: 10px solid purple;
+        border-radius: 10px;
+    }
+       
+      
+    </style>
+</head>
+<body>
+   
+    <button>fade</button>
+     <div class="box">
+        
+     </div>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          const $box=$(".box")
+          $("button").on("click",()=>{
+            $box.fadeToggle(1500,function(){
+                console.log("fade byby")
+            })
+          })
+       
+             
+        })
+    </script>
+</body>
+</html>

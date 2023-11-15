@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+       button{
+        background-color: burlywood;
+        border: none;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <label class="name" for="">name :</label>
+    <label class="hair_color" for="">hair color :</label>
+    <label  class="mass"for="">mass :</label>
+    <label class="hight" for="">name :</label>
+    <label class="gender" for="">gender :</label>
+   
+ </div>
+   
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+
+            const $name=$(".name")
+            const $hair_color=$(".hair_color")
+            const $mass=$(".mass")
+            const $hight=$(".hight")
+            const $gender=$(".gender")
+        $.get("https://swapi.dev/api/people/1/",function(data){
+
+        console.log("star war",data)
+        $name.text(`name : ${data.name}`)
+        $hair_color.text(`hair_color : ${data.hair_color}`)
+        $mass.text(`mass : ${data.mass}`)
+        $hight.text(`hight : ${data.height}`)
+        $gender.text(`gender : ${data.gender}`)
+
+      })
+             
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+       .box{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        margin: 20px auto;
+        background-color: green;
+       }
+       .yellew{
+        background-color: yellow;
+        border-radius: 20px;
+        border:10px solid goldenrod;
+       }
+      
+    </style>
+</head>
+<body>
+      <input type="text" id="inputCss">
+    <button type="button" id="togelcss">toggle blue</button>
+     <div class="box">
+        
+     </div>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+             const $box=$(".box")
+/*
+             $("#togelcss").on("click",()=>{
+                
+               $box.toggleClass("yellew")
+             })*/
+
+             $("#inputCss").on("keyup",function(){
+
+                 var name =$(this).val()
+               
+
+                if(name=="salamon")
+                {
+                    console.log(`the name is ${name}`)
+
+                    $box.addClass("yellew")
+                }
+                else{
+                    $box.removeClass("yellew")
+
+                }
+             })
+        })
+    </script>
+</body>
+</html>

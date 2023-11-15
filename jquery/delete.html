@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="perent_element">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sed excepturi laboriosam deleniti numquam dolorem illum atque, ducimus nisi ea vel natus eveniet velit quo, rerum blanditiis debitis ex magni!</p>
+        <h3>hello salamon</h3>
+        <section>section 2 for you</section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+        //to remove element from html
+        const $pelement=$("#perent_element")
+       // one way is to remove
+        //$pelement.remove()
+        //secend way is to empty
+        $pelement.empty()
+        $pelement.html("great job you sasscsfuly remeov the html  elements")
+         
+
+        })
+    </script>
+</body>
+</html>

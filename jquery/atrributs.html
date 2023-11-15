@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       input{
+        padding: 10px;
+        border-radius: 5px;
+       }
+       button{
+        background-color: burlywood;
+        border: none;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+  <form action="">
+        <div class="item">
+          <input type="text">
+          <button>see password</button>
+        </div>
+  </form>
+    
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+       const $input=$("input")
+       $("button").on("click",function(e){
+        e.preventDefault()
+        console.log("hey", $input.attr("type"))
+       if( $input.attr("type")=="text")
+       {
+        $input.attr("type","password")
+
+       }else{
+        $input.attr("type","text")
+
+       }
+       })
+             
+        })
+    </script>
+</body>
+</html>

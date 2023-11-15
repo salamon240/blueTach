@@ -18,8 +18,17 @@
 
     .items {
         margin:auto;
-        h3{
+        h2{
             color: white;
+        }
+
+        .radioInput{
+
+            display: flex;
+            label{
+                color: white;
+                font-size: 20px;
+            }
         }
         button{
             padding: 5px 30px;

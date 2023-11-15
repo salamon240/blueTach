@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> our custom titel</h1>
+    <button class="custom-class">thi is a custom button</button>
+    <p class="custom-class">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo consequatur omnis iure et autem eius dolor hic amet. Beatae nesciunt repudiandae excepturi tempora perferendis sequi commodi vel optio assumenda!
+    </p>
+    <p id="custmo-id">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio blanditiis temporibus vitae culpa delectus odit perspiciatis nobis maxime nihil modi, aspernatur neque explicabo dolor aut harum laboriosam at quaerat!
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log("jqeury is ready")
+            $("h1").text("change text")
+            $("p").html("<strong>is my frist time using jquery </strong>")
+        })
+    </script>
+</body>
+</html>

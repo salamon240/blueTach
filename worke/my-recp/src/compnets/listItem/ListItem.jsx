@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { Link } from "react-router-dom";
+
 import './listItem.scss'
 function ListItem({prop}) {
   const[review,setReview]=useState("")
@@ -27,12 +29,15 @@ function ListItem({prop}) {
                 <h3 id='foodH' >{prop.label}</h3>
                 <img id='imgId' src={prop.image} alt="food" />
                 <p id='desc'>review:</p>
+               
                 <ul>
-                  {allReview.map(item=>(
+                   
+                  {allReview?  allReview.map(item=>(
                     <li>{item}</li>
 
-                  ))}
+                  )):<li>No reviews</li>}
                 </ul>
+                <Link to="/singel" state={{ data: prop }}></Link>
                 <a id='linkId' href="">food link</a>
                 <div className="revieo">
                 <input className='reivInput' type="text" onChange={(e)=>setReview(e.target.value)} placeholder='your reivew'/>

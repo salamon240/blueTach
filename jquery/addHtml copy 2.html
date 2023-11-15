@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            margin: 20 auto;
+            background-color: blanchedalmond;
+        }
+        .blue{
+            border-radius: 50%;
+            background-color: blue;
+        }
+        .whide{
+              width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <button id="removeBlue">remove blue</button>
+    <button id="removewhide">remove whide</button>
+     <div class="box blue whide "></div>
+
+     
+     <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo repudiandae porro sed omnis quae maiores. Aut facilis ut quas excepturi hic. Quibusdam veritatis vel rerum et qui provident saepe error?</section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+        //$(".box").addClass('blue')
+
+          const $box=$(".box")
+          const $whid=$("#removewhide")
+          const $blue=$("#removeBlue")
+
+          $whid.on("click",function(){
+            $box.removeClass("whide")
+          })
+          $blue.on("click",function(){
+            $box.removeClass("blue")
+          })
+             
+        })
+    </script>
+</body>
+</html>

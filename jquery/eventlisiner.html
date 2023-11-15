@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="perent_element">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sed excepturi laboriosam deleniti numquam dolorem illum atque, ducimus nisi ea vel natus eveniet velit quo, rerum blanditiis debitis ex magni!</p>
+        <h3>hello salamon</h3>
+        <section>section 2 for you</section>
+        <button id="btn">change the html color</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+       //שיטה רגילה לעשות EVENT
+       $(document).on("click","#btn2",function(){
+        console.log("the modern way to do events")
+    })
+           const $btnColor=$("#btn").click(function(){
+               console.log("btn is clicked")
+                $("#perent_element *").css({"color":"blue","background-color":"yellow"})
+                $("#perent_element").append("<button id='btn2'>just click</button>")
+            })
+
+
+            //עוד שיטה יותר מודרנית וטבוה יותר לבצע EVENT
+//$("#btn").on("click",function(){})
+ 
+// טוב לשישמוש כאשר אנחנו מייצרים אלמנט  בצורה דינמית ניתן להצהיר על הפונקציה לפני היצירה של האלמנט מה שהופך את זה לדינמי הדרך הכי מתקדמת לבצע את זה 
+/*$(document).on("click","#btn2",function(){
+    console.log("the modern way to do events")
+})
+
+$("#perent_element").append("<button id='btn2'>just click</button>")
+*/
+        })
+    </script>
+</body>
+</html>

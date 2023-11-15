@@ -1,7 +1,11 @@
 import React from 'react'
 import "./singel.scss"
+import { Link, useLocation } from "react-router-dom";
+
 
 function Singel() {
+  const location = useLocation();
+  const movie = location.state.data;
   return (
     <div>
         <div className="container">
