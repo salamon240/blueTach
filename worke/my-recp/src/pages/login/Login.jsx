@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState ,useContext} from "react";
 import "./login.scss";
 import axios from "axios"
-
+import { useAute } from "../../contex/aute";
 function Login() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -14,14 +14,13 @@ function Login() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isRegister, setIsRegister] = useState(true);
   const [err,seterr]=useState('')
-
+ const { login, register } = useAute()
 
   const handelRegister=async (e)=>{
     e.preventDefault();
     console.log("handelRegister")
     try {
-      const respons=await axios.post("http://localhost:5052/register",userName)
-      console.log(respons.data)
+      register(userName)
     } catch (error) {
       console.log("eror",error)
     }
@@ -30,10 +29,11 @@ function Login() {
 
   const handelLogin=async(e)=>{
     e.preventDefault();
-    console.log("handelRegister")
+   
     try {
-      const respons=await axios.post("http://localhost:5052/login",userName)
-      console.log(respons.data)
+      console.log("handelLgin")
+      login(userName)
+    
     } catch (error) {
       console.log("eror",error)
     }
@@ -48,7 +48,7 @@ function Login() {
   return (
     <div>
       <div className="container">
-        <form action="" className="form" onSubmit={isRegister?handelRegister:handelLogin}>
+        <form action="" className="form" onSubmit={isRegister ?  handelRegister:handelLogin}>
           <div className="items">
             <h2>{isRegister ? "Register" : "Login"}</h2>
             <div className="radioInput">

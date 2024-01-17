@@ -8,12 +8,16 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 function App() {
   const {currentUser}=useAute();
+  console.log("corentuser",currentUser)
   return (
     <div className="App">
 
-     |<Router>
-      <Routes>
-        <Route path='/login' element={currentUser?<Navigate to="/recipes"/>:<Login></Login>}></Route>
+     <Router>
+         <Routes>
+             <Route path='/login' element={currentUser?
+             <Navigate to="/recipes"/>:<Login/>}>
+
+            </Route>
         <Route path='/recipes' 
         element={
        <PrivateRoute>
@@ -25,7 +29,7 @@ function App() {
         </Route>
       </Routes>
      </Router>
-     <Login/>
+     
 
     </div>
   );

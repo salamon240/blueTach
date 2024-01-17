@@ -37,7 +37,7 @@ userRouter.post('/login',(req,res)=>{
     const hashePassword=bycrept.hashSync(password,10)
     const newUser={
         id:Date.now().toString(),
-        userName,
+        email,
         hashePassword
     }
 
@@ -45,7 +45,7 @@ userRouter.post('/login',(req,res)=>{
     
     users.push(newUser)
     fs.writeFileSync(recipesFilePath,JSON.stringify(users,null,2),'utf8');
-    res.json({massage:"user register successfully",userId:newUser.id})
+    res.json({massage:"user login successfully",userId:newUser.id})
 })
 
 module.exports =userRouter;

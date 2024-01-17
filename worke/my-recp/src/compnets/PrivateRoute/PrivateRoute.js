@@ -1,11 +1,14 @@
-import React from 'react'
-import { useAute } from '../../contex/aute'
-import { Navigate } from 'react-router-dom'
-import Home from '../../pages/home/Home'
 
-const PrivateRoute = ({childern}) => {
-  const {currentUser}=useAute()
-  return currentUser?childern:<Navigate to="login"/>
+
+import { Navigate } from 'react-router-dom';
+import { useAute } from '../../contex/aute';
+
+
+const PrivateRoute = ({ children }) => {
+    const { currentUser } = useAute()
+    console.log("childern",currentUser)
+ 
+    return currentUser? children:<Navigate to='/login'/>;
 }
 
 export default PrivateRoute
